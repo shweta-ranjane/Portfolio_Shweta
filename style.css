@@ -8,12 +8,12 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
-  --first-color:#990099;
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --first-color: #a3297a;
+  --second-color:#402634;
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
-  --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
+  --big-font-size: 1.5rem;
+  --h2-font-size: 1.10rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
   /*===== Margenes =====*/
@@ -112,16 +112,16 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-image: linear-gradient(to right,#DCB6CC,#BB8FA8,#A57490,#8B5473);;
+  background-image: linear-gradient(to right,#DCB6CC,#BB8FA8,#A57490,#8B5473,#804d69);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
-
-/*===== NAV =====*/
+/*dark mode*/
 .dark-mode{
 background-color:black;
 color:white;
 }
 
+/*===== NAV =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -163,15 +163,14 @@ color:white;
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: purple;
+  background-color: var(--first-color);
 }
 
 .nav__logo {
   font-variant: small-caps;
-  color: purple;
+  color: var(--second-color);
   font-weight: bold;
   font-size: 30px;
- 
 }
 
 .nav__toggle {
@@ -188,13 +187,13 @@ color:white;
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: purple;
+  background-color: var(--first-color);
 }
 
 /*=== Show menu ===*/
-/*.show {
+.show {
   right: 0;
-}*/
+}
 
 /*===== HOME =====*/
 .home {
@@ -232,25 +231,20 @@ color:white;
   color: var(--first-color);
 }
 
-.abtimg{
-  width: 360px;
-
-}
-
 .home__img {
-  position:absolute;
+  position: absolute;
   right: 0;
   bottom: 0;
-  padding-left: 200px;
-  
+  padding-left: 190px;
+  width: 300px;
 }
 
 .home__blob {
   fill: var(--first-color);
 }
 
-.img {
-  width: 400px;
+.home__blob-img {
+  width: 360px;
 }
 
 /*BUTTONS*/
@@ -283,7 +277,7 @@ color:white;
 }
 
 .about__img img {
-  width: 300px;
+  width: 200px;
   border-radius: .5rem;
 }
 
